@@ -1,137 +1,24 @@
-<!-- <!DOCTYPE html>
-<html>
-	<head>
-		<title>COMP 4711</title>
-		<link href="./css/indexCSS.css" rel="stylesheet" />
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-	</head>
-	<body>
-		<div class="row">
-			<div class="col-sm-12">
-				<p>as123</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col"></div>
-			<div class="col"><p>asdf</p></div>
-			<div class="col"></div>
-		</div>
-	</body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
 <head>
-	<title>COMP 4711</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<link href="./css/indexCSS.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
 </head>
+<script src="./scripts/scripts.js"></script>
 <body>
-	<div class="container">
-		<table class="table table-hover">
-			<thead>
-				<tr>
-					<th>
-						<div class="container-fluid">
-							<div class="row">
-								<div class="form-group">
-									<label for="artistDirectoryForm">Artist Directory</label>
-									<input type="text" class="form-control artistDirectoryForm" id="artistDirectoryForm" name="artistName">
-								</div>
-							</div>
-						</div>
-					</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th>
-						<a href="#" class="btn btn-light btn-block userButton" role="button">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-4"><img src="./images/1.jpg" alt="user"></div>
-									<div class="col-8">
-										<div class="row">Sam Tadey</div>
-										<div class="row">Terrible at board games</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<a href="#" class="btn btn-light btn-block userButton" role="button">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-4"><img src="./images/2.jpg" alt="user"></div>
-									<div class="col-8">
-										<div class="row">Jenelle Yonkman</div>
-										<div class="row">Best gal in CST this term</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<a href="#" class="btn btn-light btn-block userButton" role="button">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-4"><img src="./images/3.jpg" alt="user"></div>
-									<div class="col-8">
-										<div class="row">John Hoang</div>
-										<div class="row">Enjoys eating white burritos at BCIT</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<a href="#" class="btn btn-light btn-block userButton" role="button">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-4"><img src="./images/4.jpg" alt="user"></div>
-									<div class="col-8">
-										<div class="row">Oliver Jang</div>
-										<div class="row">Literal god at programming</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</th>
-				</tr>
-				<tr>
-					<th>
-						<a href="#" class="btn btn-light btn-block userButton" role="button">
-							<div class="container-fluid">
-								<div class="row">
-									<div class="col-4"><img src="./images/5.jpg" alt="user"></div>
-									<div class="col-8">
-										<div class="row">Victor Vuong</div>
-										<div class="row">Needs a haircut really really bad</div>
-									</div>
-								</div>
-							</div>
-						</a>
-					</th>
-				</tr>
-			</tbody>
-		</table>
+	<div class="titleAndSearch">
+		<h2 class="artistTitle">
+			Artist Directory
+		</h2>
+		<div class="topnav">
+			<span><input class = "topnavTextbox" type="text" placeholder=""> <button id = "showArtistFormButton" onclick = "showArtistForm()" type="button">Add Artist</button></span>
+		</div>
 	</div>
+	<div id = "addArtistForm">
+		<input type="text" class = "artistInput" id = "artistName" name="artistName" value = "" placeholder="Artist Name"><br>
+		<input type="text" class = "artistInput" id = "aboutArtist" name="aboutArtist" value = "" placeholder="About Artist"><br>
+		<input type="text" class = "artistInput" id = "imageURL" name="imageURL" value="" placeholder = "Image URL"><br>
+		<button id = "addArtistButton" type="button" onclick = "addArtist()">Add</button>
+	</div>
+	<table id = "artistTable">
+	</table>
 </body>
-</html>
+<script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.19.8.17540-141 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>

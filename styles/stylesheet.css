@@ -1,0 +1,137 @@
+/* Add a black background color to the top navigation bar */
+
+body {
+  font-family: Verdana;
+}
+
+.titleAndSearch {
+  margin: 0px auto;
+  width: 40%;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: lightgrey;
+  display: table;
+}
+
+#artistTable {
+  margin: 0px auto;
+}
+
+.artistTitle {
+  text-align: left;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+
+.topnav {
+  text-align:center;
+  margin-bottom: 2em;
+  }
+
+.topnavTextbox {
+  width: 80%;
+  border-radius:5px;
+  border-width: 1.5px;
+  font-size: 25px;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+ tr {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid grey;
+}
+
+.artistName {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 300px;
+}
+
+th, td:hover {
+  background-color: rgba(82, 80, 81, 0.863);
+}
+
+#addArtistForm {
+  text-align:center;
+  padding-bottom: 10px;
+  display: none;
+}
+
+.artistInput {
+  font-size: 16px;
+  padding: 8px;
+  text-align: center;
+  width: 30%;
+  border-radius: 5px;
+  border-style: solid;
+  border-color:lightgrey;
+  border-width: 1.5px;
+}
+
+#showArtistFormButton {
+  background-color: lightgrey;
+  color: black;
+  border: none;
+  text-align:center;
+  font-size: 18px;
+  font-family:Helvetica;
+  padding: 10px;
+}
+
+#addArtistButton {
+  background-color: lightgrey;
+  color: black;
+  border: none;
+  text-align:center;
+  font-size: 18px;
+  font-family:Helvetica;
+  padding: 10px;
+  width: 15%;
+}
+
+#deleteArtistButton {
+  background-color: red;
+  border-style: solid;
+  border-color: red;
+  border-radius: 5px;
+  border-width: 1.5px;
+  font-size: 14px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  float:right;
+  
+}
+
+#artistImage{
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#artistTableRow {
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 1.5px;
+}
+
+#artistInfo {
+  padding-left: 5px;
+  width: 300px;
+}
+
+#artistNameP {
+  font-weight:bold;
+}
