@@ -1,24 +1,26 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
-<head>
-	<link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
-</head>
-<script src="./scripts/scripts.js"></script>
-<body>
-	<div class="titleAndSearch">
-		<h2 class="artistTitle">
-			Artist Directory
-		</h2>
-		<div class="topnav">
-			<span><input class = "topnavTextbox" type="text" placeholder=""> <button id = "showArtistFormButton" onclick = "showArtistForm()" type="button">Add Artist</button></span>
-		</div>
-	</div>
-	<div id = "addArtistForm">
-		<input type="text" class = "artistInput" id = "artistName" name="artistName" value = "" placeholder="Artist Name"><br>
-		<input type="text" class = "artistInput" id = "aboutArtist" name="aboutArtist" value = "" placeholder="About Artist"><br>
-		<input type="text" class = "artistInput" id = "imageURL" name="imageURL" value="" placeholder = "Image URL"><br>
-		<button id = "addArtistButton" type="button" onclick = "addArtist()">Add</button>
-	</div>
-	<table id = "artistTable">
-	</table>
-</body>
-<script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.19.8.17540-141 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script></body></html>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <body onload="loadArtistTable()">
+        <head>
+            <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+        </head>
+        <script src="scripts/scripts.js"></script>
+        <div class="titleAndSearch">
+            <h2 id = "test" class="artistTitle">
+                Artist Directory
+            </h2>
+            <div class="topnav">
+                <span><input id = "searchField" class = "topnavTextbox" type="text" placeholder=""><button id = "searchArtistsButton" onclick = "searchArtists()" type = "button">Search</button><button id = "showArtistFormButton" onclick = "showArtistForm()" type="button">Add Artist</button></span>
+            </div>
+        </div>
+        <div id = "addArtistForm">
+            <input type="text" class = "artistInput" id = "artistName" name="artistName" value = "" placeholder="Artist Name"><br>
+            <input type="text" class = "artistInput" id = "aboutArtist" name="aboutArtist" value = "" placeholder="About Artist"><br>
+            <input type="text" class = "artistInput" id = "imageURL" name="imageURL" value="" placeholder = "Image URL"><br>
+            <button id = "addArtistButton" type="button" onclick = "addArtist()">Add</button>
+        </div>
+        <table id = "artistTable">
+        </table>
+        <script type="text/javascript" src="/d2l/common/math/MathML.js?v=20.19.8.17540-141 "></script><script type="text/javascript">document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'); });</script>
+    </body>
+</html>
